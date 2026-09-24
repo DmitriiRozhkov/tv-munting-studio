@@ -789,8 +789,12 @@
   // Booked time windows, by date. Edit this whenever a slot gets taken —
   // key format "YYYY-MM-DD", values must exactly match strings in SLOTS above.
   // Example: "2026-09-22": ["9 AM–11 AM", "1 PM–3 PM"]
+  const ALL_SLOTS_BOOKED = ["7 AM–9 AM", "9 AM–11 AM", "11 AM–1 PM", "1 PM–3 PM", "3 PM–5 PM", "5 PM–7 PM"];
   const BOOKED_SLOTS = {
-    "2026-09-17": ["7 AM–9 AM", "9 AM–11 AM", "11 AM–1 PM", "1 PM–3 PM", "3 PM–5 PM"]
+    "2026-09-25": ALL_SLOTS_BOOKED,
+    "2026-09-26": ALL_SLOTS_BOOKED,
+    "2026-09-27": ALL_SLOTS_BOOKED,
+    "2026-09-28": ALL_SLOTS_BOOKED
   };
   function dateKey(d) {
     const y = d.getFullYear();
